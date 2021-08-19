@@ -20,9 +20,11 @@ WHERE cohorts.name LIKE $1
 LIMIT $2;
 `)
 pool.query(queryString, values);
-  .then(res => {
+   .then(res => {
     res.rows.forEach(row => {
       console.log(`${row.name} has an id of ${row.student_id} and was in the ${row.cohort} cohort`);
       console.log(res.rows);
     });
-  });
+  }).catch(err => console.error('error', err.stack));
+
+
