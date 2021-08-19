@@ -1,7 +1,7 @@
 INSERT INTO reservations (guest_id, property_id, start_date, end_date) 
-VALUES (2, 5, '2018-09-11', '2018-09-26'),
-(1, 4, '2019-01-04', '2019-02-01'),
-(8, 5, '2021-10-01', '2021-10-14');
+VALUES (2, 1, '2018-09-11', '2018-09-26'),
+(1, 2, '2019-01-04', '2019-02-01'),
+(8, 3, '2021-10-01', '2021-10-14');
 
 
 INSERT INTO users (name, email, password)
@@ -18,6 +18,6 @@ VALUES (1, 'Blank corner', 'description','https://images.pexels.com/photos/11720
 
 INSERT INTO property_reviews (guest_id, property_id, reservation_id, rating, message)
 
-VALUES (1, 5, 10, 3, 'messages'),
-(1, 4, 1, 4,'messages'),
-(8, 5, 2, 4, 'messages');
+VALUES (1, 1, 10, 3, 'messages'),
+(1, 2, 11, 4,'messages'),
+(8, 3, 12, 4, 'messages');
